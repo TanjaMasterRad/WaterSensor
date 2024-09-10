@@ -25,7 +25,7 @@ while True:
     while not no_rain.is_active:
         GPIO.output(greenLED ,GPIO.HIGH)
         print("led on")
-        send_message("Detektovana je voda")
+        send_message("Voda je detektovana")
         while True:
             if no_rain.is_active:
                 GPIO.output(greenLED ,GPIO.LOW)
